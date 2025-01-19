@@ -1,19 +1,21 @@
-# ECS160 HW1: Bluesky Post Analyzer
+# ECS160 HW1: Social Media Analysis
 
-[![Build Status](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions/workflows/maven.yml)
+[![Build](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions/workflows/maven.yml/badge.svg)](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions)
 
-A Java application for **storing and analyzing social media posts** (e.g., from Bluesky).  
-This project demonstrates:
-- Parsing JSON input
-- Storing posts and replies in a PostgreSQL database
-- Computing various statistics (total posts, average replies, etc.)
-- Supporting weighted analysis (optional)
-
----
+A Java application to store and analyze social media posts from Bluesky.
+- Parses `input.json`
+- Stores data in PostgreSQL
+- Calculates statistics (total posts, avg replies, etc.)
+- Supports weighted analysis
 
 ## Getting Started
-
-1. **Clone this repository**:
+1. Clone this repo.
+2. Run `mvn clean install` in IntelliJ or terminal.
+3. Run the app with:
    ```bash
-   git clone https://github.com/Ayub-Hanif/BlueskyPostAnalyzer.git
-   cd BlueskyPostAnalyzer
+   java -jar target/HW1-solution-1.0-SNAPSHOT.jar
+## Database Setup
+1. **Install PostgreSQL** (if you haven’t already).
+2. **Create a database**. Example:
+   ```bash
+   createdb socialmedia_db
