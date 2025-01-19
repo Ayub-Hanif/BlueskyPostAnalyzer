@@ -1,6 +1,7 @@
 # ECS160 HW1: Social Media Analysis
+# BlueskyPostAnalyzer
 
-[![Build](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions/workflows/maven.yml/badge.svg)](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions)
+[![Maven Build and Test](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/Ayub-Hanif/BlueskyPostAnalyzer/actions/workflows/maven.yml)
 
 A Java application to store and analyze social media posts from Bluesky.
 - Parses `input.json`
