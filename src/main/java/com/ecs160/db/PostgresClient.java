@@ -94,6 +94,4 @@ public class PostgresClient {
         }
         return null;
     }
-
-    // Additional methods for querying, updating, and deleting posts can be added here.
 }
