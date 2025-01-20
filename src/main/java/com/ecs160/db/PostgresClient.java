@@ -1,3 +1,8 @@
+
+    /**
+     * This file is built fully by AI to help in the future parts/make it more secure.
+     */
+
 package com.ecs160.db;
 
 import java.io.FileInputStream;
