@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project
         xmlns="http://maven.apache.org/POM/4.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,7 +26,6 @@
 
     <!-- Dependencies -->
     <dependencies>
-
         <!-- Gson for JSON parsing -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -63,11 +61,18 @@
             <version>5.9.3</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <!-- Build plugins -->
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <!-- Shade plugin if you want a single “fat” JAR -->
             <plugin>
@@ -92,7 +97,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!-- Replace with your actual main class -->
                             <mainClass>com.ecs160.hw1.SocialMediaAnalyzerDriver</mainClass>
                         </manifest>
                     </archive>
@@ -105,14 +109,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.plugin.version}</version>
                 <configuration>
-                    <!-- Required for JUnit 5 in some setups, but 3.0.0 often works without extra config -->
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
-
         </plugins>
 
-        <!-- If you want to keep test sources in a special folder, it's here -->
         <testSourceDirectory>src/test/java</testSourceDirectory>
     </build>
 </project>
