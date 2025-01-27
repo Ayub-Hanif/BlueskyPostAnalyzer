@@ -11656,3 +11656,9 @@ Replies count: 2
 I was worried about this before OAuth was designed, but the team did a great job implementing in a decentralized way. 
 
 “Login to ATmosphere”? Needs some work.
+
+Statistics:
+Total Posts: 2961
+Average Replies: 1.3258621077747426
+Average Interval: 10:16:55
+longest post: 60.0
